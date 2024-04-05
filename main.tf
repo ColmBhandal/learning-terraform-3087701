@@ -2,7 +2,7 @@ data "aws_ami" "app_ami" {
   most_recent = true
 
   filter {
-    name   = "${var.environment.name}-name"
+    name   = "name"
     values = [var.ami_filter.name]
   }
 
